@@ -1,4 +1,4 @@
-import javax.persistence.*;
+import javax.persistence;
 
 @Entity
 @Table(name="Empresa")
