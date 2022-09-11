@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class repositorio{
   public static void main(String args[]){
    System.out.println("Bienvenidos al repositorio Java-Start"); 
@@ -39,16 +41,6 @@ class Empleado{
 }
 
 // Spring 3
-import java.util.List;
-
-public interface repositorioUsuario extends JpaRepository {
-    @Query(value = "select * from Usuario", nativeQuery = true)
-    public abstract List <Empresa> findAll();
-
-}
-
-
-
 
 
 
