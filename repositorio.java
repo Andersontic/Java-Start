@@ -38,3 +38,19 @@ class Empleado{
     private TipoEmpresa_Enum tipo;
 }
 
+// Spring 3
+import java.util.List;
+
+public interface repositorioUsuario extends JpaRepository {
+    @Query(value = "select * from Usuario", nativeQuery = true)
+    public abstract List <Empresa> findAll();
+
+}
+
+
+
+
+
+
+
+
