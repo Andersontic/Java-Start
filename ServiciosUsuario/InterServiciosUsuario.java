@@ -1,8 +1,10 @@
 package ServiciosUsuario;
 
+import java.util.List;
 
 
 public interface InterServiciosUsuario {
+
     public list<User> getAll;
     //interfaz creacion
     List<User> findall();
