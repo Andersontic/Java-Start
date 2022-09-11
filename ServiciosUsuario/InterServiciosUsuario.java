@@ -1,15 +1,21 @@
 package ServiciosUsuario;
 
+
+
 public interface InterServiciosUsuario {
+    public list<User> getAll;
     //interfaz creacion
-    public List<Usuario> findall();
+    List<User> findall();
     //consultar todos los usuarios
-    public Usuario findByID(long id);
+    public User findByID(long id);
     //buscar solo una empresa
-    public Usuario create(Usuario prmUsuario);
+    public User create(User prmUser);
     //crear un usuario
-    public usuario update(long, id, Usuario, prmUsuario);
+    public User update(long, id, User, prmUser);
     // Editar un usuario
     public void deleteById(long id);
     // Eliminar un usuario
 }
+
+
+
