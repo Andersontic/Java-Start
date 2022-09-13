@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Table(name="MovimientoDinero")
 public class MovimientoDinero {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
     private long monto;
     private String concepto;
@@ -58,3 +58,5 @@ public class MovimientoDinero {
         this.usuario = usuario;
     }
 }
+
+
