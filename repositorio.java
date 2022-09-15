@@ -11,7 +11,7 @@ public class repositorio{
  }
 }
 
-
+// CLASE EMPLEADO
 public class Empleado{
 
     private int id;
