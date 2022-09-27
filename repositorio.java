@@ -1,8 +1,8 @@
 import anotaciones.*;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.ArrayList;
 import java.util.Optional;
-
 
 public class repositorio{
   public static void main(String args[]){
@@ -140,8 +140,15 @@ public class EmpleadoService {
       public String DeleteEmpleado(@PathVariable("id") Integer id){
           boolean respuesta=empleadoService.deleteEmpleado(id);
           if (respuesta){
-              return "Se pudo eliminar correctamente el empleado con identificacion "+id;
+              return "Fue satisfactoria la eliminación el empleado con identificacion "+id;
           }
           return "No se puedo eliminar correctamente el empleado con identificacion"+id;
       }
   }
+
+
+  //CREACION REPOSITORIO EMPRESA Y ENTIDAD
+  @Repository
+  public interface EmpresaRepository extends JpaRepository<Empresa, Integer> {
+  }
+
